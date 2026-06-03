@@ -22,7 +22,7 @@ def play_alarm():
     winsound.Beep(1000, 500)
 
 def send_to_n8n(violation_label):
-    webhook_url = "https://n8n.srv1459174.hstgr.cloud/webhook/safety-violation" 
+    webhook_url = "N8N_WEBHOOK_URL" 
     data = {
         "violation": violation_label,
         "status": "CRITICAL",
